@@ -1,0 +1,139 @@
+:root {
+    --cor-primaria: #211522;
+    --cor-secundaria: #613659;
+    --cor-terciaria: #D3B1C2;
+    --cor-quartenaria: #C197D2;
+}
+
+.bg-secondary {
+    background-color: var(--cor-secundaria) !important;
+}
+
+.sidebar {
+    font-size: 1.7em;
+    width: 280px;
+}
+
+.sidebar :is(.nav, div) a:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria) !important;
+    transition: .4s;
+}
+
+.sidebar .material-symbols-outlined {
+    font-size: 1.6em;
+}
+
+.text-secondary {
+    color: var(--cor-terciaria) !important;
+}
+
+.bg-primary {
+    background-color: var(--cor-primaria) !important;
+}
+
+.musica-destaque {
+    height: 600px;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to right, transparent, var(--cor-terciaria)) !important;
+}
+
+.titulo-musica-destaque {
+    font-size: 3em;
+}
+
+.botao:hover {
+    background-color: #462640 !important;
+}
+
+.categorias {
+    max-width: calc(100vw - 300px) !important;
+}
+
+.categorias li:hover {
+    transform: scale(1.13);
+}
+
+.musicas-card {
+    width: 100px;
+}
+
+.musicas-card:hover {
+    transform: scale(1.03);
+}
+
+.musicas-card img, .aspect-ratio-1x1 {
+    aspect-ratio: 1 / 1;
+}
+
+.icon-musica.material-symbols-outlined {
+    font-size: 1.5em;
+    color: var(--cor-terciaria);
+}
+
+.luz {
+    box-shadow: 0 0 50px var(--cor-secundaria);
+}
+
+.texto-luz {
+    text-shadow: 4px 5px 4px var(--cor-secundaria);
+}
+
+.musica h1 {
+    font-size: 3em;
+}
+
+::-webkit-scrollbar {
+    background: var(--cor-primaria);
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Botão de arrastar da barra de rolagem */
+    border: 3px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor-terciaria);
+}
+
+body::-webkit-scrollbar-button:single-button {
+    /* Botões de subir e descer a barra de rolagem */
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button {
+    /* Botões de subir a barra de rolagem */
+    height: 12px;
+    width: 16px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    /* Botões de subir a barra de rolagem */
+    background-position: center 5px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(97, 54, 89)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+     /* Botões descer a barra de rolagem */
+    background-position: center 2px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(97, 54, 89)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    /* Botões de subir a barra de rolagem */
+    background-position: center;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(97, 54, 89)'><polygon points='100,0 50,50 100,100'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+    /* Botões descer a barra de rolagem */
+    background-position: center;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(97, 54, 89)'><polygon points='50,50 0,100 0,0'/></svg>");
+}
